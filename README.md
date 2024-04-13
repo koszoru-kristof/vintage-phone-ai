@@ -13,6 +13,16 @@ Pick up the phone-> Say turn off all the lights -> Hang up phone while smiling -
 
 Ask any random question you desperately want the answer -> it tells you the answer-> deep exhale
 
+## Running the AI Voice Assistant
+
+To run the `talk_with_an_ai.py` script, follow these steps:
+
+1. Ensure you have Python installed on your system.
+2. Install the required dependencies by running `pip install -r requirements.txt`.
+3. Run the script using the command `python talk_with_an_ai.py`.
+4. Speak into the microphone after the "Recording..." prompt.
+5. The AI will respond to your query with a voice message.
+
 Ask about the temperature outside -> it tells you that it is X degrees -> happiness
 
 
