@@ -19,12 +19,27 @@ To run the `talk_with_an_ai.py` script, follow these steps:
 
 1. Ensure you have Python installed on your system.
 2. Install the required dependencies by running `pip install -r requirements.txt`.
-3. Run the script using the command `python talk_with_an_ai.py`.
+3. Run the script using the command `python talk_with_an_ai.py` or using Docker as described below.
 4. Speak into the microphone after the "Recording..." prompt.
 5. The AI will respond to your query with a voice message.
 
+### Using Docker
+
+To build the Docker image and run the container, follow these steps:
+
+1. Build the Docker image:
+   ```
+   docker build -t upcycled-telephone .
+   ```
+2. Run the container from the image:
+   ```
+   docker run -it --rm --name upcycled-telephone-instance upcycled-telephone
+   ```
+   Note: The `-it` flag is used to run the container in interactive mode and allocate a pseudo-TTY, which is necessary for the script to accept audio input.
+
 Ask about the temperature outside -> it tells you that it is X degrees -> happiness
 
+## Useful resources
 
 
 ## Useful resources
