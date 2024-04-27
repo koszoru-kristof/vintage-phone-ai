@@ -2,3 +2,5 @@ openai
 pyaudio
 wave
 playsound
+pydub
+elevenlabs

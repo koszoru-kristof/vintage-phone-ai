@@ -41,9 +41,6 @@ Ask about the temperature outside -> it tells you that it is X degrees -> happin
 
 ## Useful resources
 
-
-## Useful resources
-
 * Two part breakdown series on the mechanical and electronic parts of the original telephone [[1]](https://dodlithr.blogspot.com/2015/04/how-dial-phone-works.html#more), [[2]](https://dodlithr.blogspot.com/2015/05/how-dial-phone-works-22.html)
 
 * Similar open-source projects
