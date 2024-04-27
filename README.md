@@ -4,14 +4,21 @@ This project aims to repurpose an old rotary dial telephone to be a more natural
 
 
 
-## Dream use cases
-### Smart home control
+## Features
+
+- **Smart home control**
 
 Pick up the phone-> Say turn off all the lights -> Hang up phone while smiling -> (light are turning off)
 
-### Voice Assistant
+- **Voice Assistant**
 
 Ask any random question you desperately want the answer -> it tells you the answer-> deep exhale
+
+- **Use the dial for shortcuts**
+
+  Examples:
+  - Dial 1 -> it tells you the weather -> happiness
+  - Dial 2,3,4 -> change between characters to talk to. Different agents could be specialized in different tasks. Could be indicated by different voices/accent.
 
 ## Running the AI Voice Assistant
 
