@@ -54,3 +54,4 @@ Ask about the temperature outside -> it tells you that it is X degrees -> happin
 
     * [Rotary-gpt:](https://github.com/tcz/rotary-gpt) Rotary phone is connected to a VoIP converter(Grandstream HT801), which feeds the data to a Raspberry Pi.
     * [RaspberryPi-DialTelephone:](https://github.com/CrazyRobMiles/RaspberryPi-DialTelephone) A Raspberry Pi Zero 2 is used to receive messages or control the bell through a web interface.
+    * [OpenInterpreter 01](https://github.com/OpenInterpreter/01) Stream the mic data with an ESP32 to a server, play the received audio with a speaker.
