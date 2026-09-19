@@ -20,13 +20,28 @@ Ask any random question you desperately want the answer -> it tells you the answ
   - Dial 1 -> it tells you the weather -> happiness
   - Dial 2,3,4 -> change between characters to talk to. Different agents could be specialized in different tasks. Could be indicated by different voices/accent.
 
-## Running the AI Voice Assistant
+## Dial → Home Assistant bridge
 
-To run the `talk_with_an_ai.py` script, follow these steps:
+The active work. The dial and hook switch become inputs to a local Home Assistant
+instance: dialling a digit fires the event `esphome.rotary_dial`, and the
+digit-to-action mapping lives in Home Assistant. Input only — no audio.
+
+- [Design spec](docs/superpowers/specs/2026-09-19-rotary-dial-ha-bridge-design.md)
+- [Implementation plan](docs/superpowers/plans/2026-09-19-rotary-dial-ha-bridge.md)
+
+Hardware: a Seeed XIAO ESP32C3 running ESPHome, reading the dial's impulse and
+shunt contacts plus one pole of the hook switch as dry contacts. Not yet built.
+
+## Legacy voice experiments
+
+The earlier Whisper/GPT/ElevenLabs voice-assistant experiments now live in
+[`legacy/`](legacy/) and are not part of the current direction.
+
+To run the voice assistant:
 
 1. Ensure you have Python installed on your system.
-2. Install the required dependencies by running `pip install -r requirements.txt`.
-3. Run the script using the command `python talk_with_an_ai.py` or using Docker as described below.
+2. Install the required dependencies by running `pip install -r legacy/requirements.txt`.
+3. Run the script using the command `python legacy/talk_with_an_ai.py` or using Docker as described below.
 4. Speak into the microphone after the "Recording..." prompt.
 5. The AI will respond to your query with a voice message.
 
@@ -36,7 +51,7 @@ To build the Docker image and run the container, follow these steps:
 
 1. Build the Docker image:
    ```
-   docker build -t upcycled-telephone .
+   docker build -t upcycled-telephone legacy/
    ```
 2. Run the container from the image:
    ```
