@@ -232,8 +232,13 @@ network faults.
 
 ### Home Assistant prerequisites
 
-Neither the ESPHome add-on nor an MQTT broker is currently installed. The ESPHome
-add-on must be installed. No broker is needed.
+**None.** The ESPHome *integration* in Home Assistant is built-in core and
+auto-discovers the device over the native API; it does not need installing. The
+ESPHome *add-on* is only a compiler and web dashboard, and is not required —
+firmware is compiled with the `esphome` CLI so that the device configuration lives
+in this repository under version control rather than inside add-on storage.
+
+No MQTT broker is needed.
 
 ## Failure modes
 
